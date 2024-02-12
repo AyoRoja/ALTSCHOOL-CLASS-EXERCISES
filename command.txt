@@ -1,0 +1,19 @@
+1. Sudo Useradd -m -s /usr/bin/bash Altschool ...... To create user
+Mkdir code tests personal misc ...... To create directories
+
+a. cd /home/Altschool/tests ...absolute path switching
+b. cd tests ...... relative path switching
+
+ cd misc .... to switch to misc
+c. echo "Hello A" > fileA ... to create a file using echo command
+cd .  .....to go back to misc directory
+d. touch fileB ....create and empty fileB
+e. cp fileA fileC .... to copy contents of fileA into fileC
+f. mv fileB fileD .... to move fileB into fileD, this command will rename fileB as fileD
+g. tar -cvf misc.tar misc .... this will create an archive for misc directory
+h. gzip misc.tar ...this compressess the tar archive
+i. sudo useradd -e ROJAMIDE ... creates ROJAMIDE and forces the user to change password
+j. sudo passwd -l ROJAMIDE .... locks the user paswword
+k. sudo useradd -m -s / sbin/nologin .... creates user with no login shell
+l. cat /etc/ssh/ssh_config ... edit the file to disable password authentication
+m. cat /etc/ssh/ssh_config ... edit the root login section
